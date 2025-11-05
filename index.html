@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area Code Blocker - Privacy Policy</title>
     <style>
@@ -21,28 +21,23 @@
         
         .container {
             max-width: 800px;
-            margin: 40px auto;
+            margin: 0 auto;
             background: white;
-            border-radius: 12px;
+            border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
             overflow: hidden;
         }
         
         .header {
-            background: #6200EE;
+            background: #6200ff;
             color: white;
             padding: 40px 30px;
             text-align: center;
         }
         
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
         }
         
         .content {
@@ -50,74 +45,65 @@
         }
         
         h2 {
-            color: #6200EE;
+            color: #6200ff;
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.5em;
-            border-bottom: 2px solid #6200EE;
-            padding-bottom: 5px;
         }
         
-        h2:first-of-type {
-            margin-top: 0;
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
         }
         
         p {
             margin-bottom: 15px;
-            text-align: justify;
         }
         
         ul {
-            margin: 15px 0;
-            padding-left: 30px;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
         
         li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
-        .highlight {
-            background: #f0e7ff;
-            padding: 20px;
-            border-left: 4px solid #6200EE;
-            margin: 20px 0;
-            border-radius: 4px;
+        .checkmark {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .cross {
+            color: #f44336;
+            font-weight: bold;
+        }
+        
+        a {
+            color: #6200ff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
         
         .footer {
-            background: #f5f5f5;
-            padding: 20px 30px;
             text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
             color: #666;
             font-size: 0.9em;
         }
         
-        .contact {
-            background: #6200EE;
-            color: white;
-            padding: 15px 30px;
-            margin: 30px 0;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .contact a {
-            color: white;
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 1.8em;
-            }
-            
-            .content {
-                padding: 30px 20px;
-            }
-            
-            body {
-                padding: 10px;
-            }
+        .effective-date {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -129,67 +115,176 @@
         </div>
         
         <div class="content">
-            <p><strong>Effective Date:</strong> October 15, 2025</p>
-            
+            <div class="effective-date">
+                Effective Date: November 3, 2025
+            </div>
+
             <h2>Introduction</h2>
             <p>Area Code Blocker ("we," "our," or "the app") is committed to protecting your privacy. This Privacy Policy explains how our app handles your information.</p>
-            
+            <p>Area Code Blocker is developed by <strong>River Technologies</strong>.</p>
+
             <h2>Information We Collect</h2>
             <p>Area Code Blocker requires access to the following permissions to function:</p>
+
+            <h3>Required Permissions</h3>
             <ul>
-                <li><strong>Contacts:</strong> To check if incoming callers are in your contact list and exempt them from blocking</li>
-                <li><strong>Phone State:</strong> To detect incoming calls in real-time</li>
-                <li><strong>Call Log:</strong> To maintain a history of blocked calls within the app</li>
+                <li><strong>Contacts (READ_CONTACTS)</strong>: To check if incoming callers are in your contact list and exempt them from blocking</li>
+                <li><strong>Phone State (READ_PHONE_STATE)</strong>: To detect incoming calls in real-time</li>
+                <li><strong>Call Log (READ_CALL_LOG)</strong>: To maintain a history of blocked calls within the app</li>
+                <li><strong>Post Notifications (POST_NOTIFICATIONS)</strong>: To show you notifications when calls are blocked</li>
             </ul>
-            
-            <div class="highlight">
-                <strong>🔒 Your Privacy Matters:</strong> All data is stored locally on your device only. We never transmit, share, or sell your information.
-            </div>
-            
+
+            <h3>Optional Permissions</h3>
+            <ul>
+                <li><strong>Add Contacts (WRITE_CONTACTS)</strong>: Only used when you manually choose to add a blocked number to your contacts from the block list</li>
+            </ul>
+
             <h2>How We Use Your Information</h2>
             <p>All data accessed by Area Code Blocker is:</p>
             <ul>
-                <li>Stored locally on your device only</li>
-                <li>Never transmitted to external servers</li>
-                <li>Never shared with third parties</li>
-                <li>Never sold or used for advertising</li>
-                <li>Used solely to provide call blocking functionality</li>
+                <li><span class="checkmark">✓</span> <strong>Stored locally on your device only</strong></li>
+                <li><span class="checkmark">✓</span> <strong>Never transmitted to external servers</strong></li>
+                <li><span class="checkmark">✓</span> <strong>Never shared with third parties</strong></li>
+                <li><span class="checkmark">✓</span> <strong>Never sold or used for advertising</strong></li>
+                <li><span class="checkmark">✓</span> <strong>Used solely to provide call blocking functionality</strong></li>
             </ul>
-            
+
             <h2>Data Storage</h2>
+            
+            <h3>What We Store Locally</h3>
             <ul>
-                <li>Blocked area codes are stored in your device's local storage</li>
-                <li>Block history (last 50 calls) is stored locally</li>
-                <li>No data is uploaded to cloud services or remote servers</li>
+                <li><strong>Blocked area codes</strong>: Stored in your device's local storage</li>
+                <li><strong>Allowed area codes</strong>: Stored in your device's local storage (when using Allow Only mode)</li>
+                <li><strong>Individual blocked numbers</strong>: Stored in your device's local storage</li>
+                <li><strong>Call history</strong>:
+                    <ul>
+                        <li>Free users: Last 25 blocked calls</li>
+                        <li>Pro users: Last 100 blocked calls</li>
+                    </ul>
+                </li>
+                <li><strong>Schedule settings</strong>: Your blocking schedule preferences (Pro feature)</li>
+                <li><strong>App preferences</strong>: Your blocking mode, notification settings, etc.</li>
             </ul>
-            
+
+            <h3>What We DON'T Store</h3>
+            <ul>
+                <li><span class="cross">✗</span> We do not store your contacts</li>
+                <li><span class="cross">✗</span> We do not store your call log beyond the blocked calls history</li>
+                <li><span class="cross">✗</span> We do not store any personal information</li>
+                <li><span class="cross">✗</span> We do not store your payment information (handled by Google)</li>
+            </ul>
+
+            <h2>Subscription Information</h2>
+            <p>Area Code Blocker offers optional paid subscriptions and one-time purchases through Google Play:</p>
+            <ul>
+                <li><strong>Monthly Subscription</strong>: $1.29/month</li>
+                <li><strong>Annual Subscription</strong>: $6.99/year</li>
+                <li><strong>Lifetime Purchase</strong>: $15.99 one-time</li>
+            </ul>
+
+            <h3>Payment Processing</h3>
+            <ul>
+                <li>All payment processing is handled entirely by Google Play</li>
+                <li>We do not collect, see, or store your payment information</li>
+                <li>Your subscription status is checked through Google Play Billing API</li>
+                <li>All billing data is handled by Google per their privacy policy</li>
+            </ul>
+
+            <h3>Grace Period</h3>
+            <p>When your Pro subscription expires:</p>
+            <ul>
+                <li>You have 7 days to reduce your blocked items to Free limits</li>
+                <li>Daily reminders show how many days remain</li>
+                <li>After 7 days, excess items are automatically removed</li>
+                <li>Newest items are removed first, oldest items are kept</li>
+            </ul>
+
             <h2>Third-Party Services</h2>
-            <p>Area Code Blocker does not use any third-party analytics, advertising, or tracking services.</p>
-            
+            <p>Area Code Blocker uses only one third-party service:</p>
+
+            <h3>Google Play Billing</h3>
+            <ul>
+                <li><strong>Purpose</strong>: To process purchases and subscriptions</li>
+                <li><strong>Data shared</strong>: Your Google account's purchase status only</li>
+                <li><strong>Privacy policy</strong>: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            </ul>
+
+            <h3>What We Don't Use</h3>
+            <ul>
+                <li><span class="cross">✗</span> No analytics services</li>
+                <li><span class="cross">✗</span> No advertising networks</li>
+                <li><span class="cross">✗</span> No tracking or telemetry</li>
+                <li><span class="cross">✗</span> No crash reporting services</li>
+                <li><span class="cross">✗</span> No cloud storage services</li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <p>We take security seriously:</p>
+            <ul>
+                <li>All data is stored using Android's secure SharedPreferences</li>
+                <li>App data is protected by Android's app sandbox</li>
+                <li>No network transmission of personal data</li>
+                <li>Code is obfuscated with R8/ProGuard</li>
+            </ul>
+
             <h2>Data Deletion</h2>
             <p>You can delete all app data at any time by:</p>
+            <ol>
+                <li><strong>Clear app data</strong>: Settings → Apps → Area Code Blocker → Storage → Clear Data</li>
+                <li><strong>Uninstall the app</strong>: This removes all data permanently</li>
+            </ol>
+
+            <p>When you uninstall the app:</p>
             <ul>
-                <li>Uninstalling the app, or</li>
-                <li>Going to Settings → Apps → Area Code Blocker → Storage → Clear Data</li>
+                <li>All blocked area codes are deleted</li>
+                <li>All call history is deleted</li>
+                <li>All preferences are deleted</li>
+                <li>Your subscription status remains with Google Play (managed through Google Play Store)</li>
             </ul>
-            
+
             <h2>Children's Privacy</h2>
-            <p>Area Code Blocker does not knowingly collect information from children under 13.</p>
-            
+            <p>Area Code Blocker does not knowingly collect information from children under 13. Our app is not directed at children and we do not knowingly collect personal information from minors.</p>
+            <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:rivertechnologies@pm.me">rivertechnologies@pm.me</a>.</p>
+
+            <h2>International Users</h2>
+            <p>Area Code Blocker is available worldwide. All data is stored locally on your device regardless of your location. No data is transferred internationally.</p>
+
             <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL.</p>
-            
-            <div class="contact">
-                <h2 style="color: white; border: none; margin: 0; padding: 0;">Contact Us</h2>
-                <p style="margin-top: 10px;">If you have questions about this Privacy Policy, contact us at:<br>
-                <a href="mailto:rivertechnologies@pm.me">rivertechnologies@pm.me</a></p>
-            </div>
+            <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL with an updated "Effective Date."</p>
+            <p>We encourage you to review this Privacy Policy periodically for any changes.</p>
+
+            <h2>Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the right to:</p>
+            <ul>
+                <li>Access your personal data (all stored locally on your device)</li>
+                <li>Delete your personal data (clear app data or uninstall)</li>
+                <li>Opt-out of data collection (don't grant permissions)</li>
+            </ul>
+            <p>Since all data is stored locally on your device, you have complete control at all times.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, concerns about your privacy, or requests regarding your data:</p>
+            <p><strong>Email</strong>: <a href="mailto:rivertechnologies@pm.me">rivertechnologies@pm.me</a></p>
+            <p><strong>Developer</strong>: River Technologies</p>
+            <p>We will respond to all inquiries within 48 hours.</p>
+
+            <h2>Compliance</h2>
+            <p>This Privacy Policy complies with:</p>
+            <ul>
+                <li>Google Play Store policies</li>
+                <li>Android data handling best practices</li>
+                <li>General Data Protection Regulation (GDPR) principles</li>
+                <li>California Consumer Privacy Act (CCPA) principles</li>
+            </ul>
         </div>
-        
+
         <div class="footer">
-            <p>© 2025 Area Code Blocker. All rights reserved.</p>
-            <p>Last updated: October 15, 2025</p>
+            <p><strong>Last Updated: November 3, 2025</strong></p>
+            <p><strong>Version: 2.0</strong></p>
+            <p>© 2025 River Technologies. All rights reserved.</p>
         </div>
     </div>
 </body>
 </html>
+```
+
